@@ -5,21 +5,21 @@ class Stratify < Formula
   if OS.mac?
     if Hardware::CPU.arm?
       url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "a2e27f6770dfe3c2c1315546cdc4e44647bc7600780713e27bba67fd6c18f2de"
+      sha256 "fd4438f43537e4d7ea10bc3fd6aee978bd84ade6814b6765b55628c001657e38"
     end
     if Hardware::CPU.intel?
       url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "9e81606da6af3b36e30765493c741dd33b92d0de935e76b404697ba428700e9b"
+      sha256 "b1f1f220e50d9a5a74978f4289b12fa440b6902cc28b4294e4aa35dd5547eaa6"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
       url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "461489a364f4cc2fbc41be3d2e3b9a78340c7c93182ab2b481d333ddad597681"
+      sha256 "fd1a213dc3d16e956f2b6a10defe90b267eb9d4e7c674a5a165991267eeec4bd"
     end
     if Hardware::CPU.intel?
       url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "3736078a38239425a099f4f06865af897a1b7edbc2dc15c28d03111199240bcd"
+      sha256 "94a1f5098e0c2a88dac377a05b29eaf2b1ddf93393f3a5020097dc75fb72e053"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]

@@ -1,25 +1,25 @@
 class Stratify < Formula
   desc "Stratify: polyglot codebase-intelligence CLI"
   homepage "https://github.com/stratify-dev/stratify"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-aarch64-apple-darwin.tar.xz"
-      sha256 "fd4438f43537e4d7ea10bc3fd6aee978bd84ade6814b6765b55628c001657e38"
+      url "https://github.com/stratify-dev/stratify/releases/download/v0.2.0/stratify-cli-aarch64-apple-darwin.tar.xz"
+      sha256 "40d86457b23b1971f6304015e9081195d0ef199e0a248b5ca37ae7c55d780a86"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-x86_64-apple-darwin.tar.xz"
-      sha256 "b1f1f220e50d9a5a74978f4289b12fa440b6902cc28b4294e4aa35dd5547eaa6"
+      url "https://github.com/stratify-dev/stratify/releases/download/v0.2.0/stratify-cli-x86_64-apple-darwin.tar.xz"
+      sha256 "bc31f5748f8d353dadca0900e68729189e660274fe7d96d248b4aee76ceb21fc"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "fd1a213dc3d16e956f2b6a10defe90b267eb9d4e7c674a5a165991267eeec4bd"
+      url "https://github.com/stratify-dev/stratify/releases/download/v0.2.0/stratify-cli-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "063d387baa6121af6037fcd2a574701c26bbcb2d2cdc814a40284bcd899f38f8"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/stratify-dev/stratify/releases/download/v0.1.0/stratify-cli-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "94a1f5098e0c2a88dac377a05b29eaf2b1ddf93393f3a5020097dc75fb72e053"
+      url "https://github.com/stratify-dev/stratify/releases/download/v0.2.0/stratify-cli-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "a4cde5aa04bbcea61274194dcf7762e76bf0ee62f0966765bb742157af47fde7"
     end
   end
   license any_of: ["MIT", "Apache-2.0"]
